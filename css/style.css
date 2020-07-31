@@ -24,15 +24,6 @@ body{
     padding-right: 20px;
     margin-right: 20px;
 }
-.top{
-    padding: 1rem;
-    margin-top: 50px;   
-}
-.thin{
-    font-weight: 300;
-    padding: 5px;
-    margin: 2px;
-}
 .jumbotron{
     background:#1A1D20!important;
     font-family: 'Playfair Display', serif!important;
@@ -55,6 +46,11 @@ hr{
     color: black;
 }
 
+.iconop{
+    font-size: 2rem;
+    padding: 1rem;
+    color: whitesmoke;
+}
 .neon-btn{
     color: #03e9f4;
     text-decoration: none;
@@ -90,4 +86,14 @@ hr{
                 0 0 15px lightskyblue, 
                 0 0 30px lightskyblue,
                 0 0 50px lightskyblue
+}
+
+.top{
+    padding: 1rem;
+    margin-top: 50px;   
+}
+.thin{
+    font-weight: 300;
+    padding: 5px;
+    margin: 2px;
 }
