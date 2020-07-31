@@ -1,9 +1,28 @@
 body{
-    background:black;
-    color: whitesmoke;
-    
-    font-family: 'Playfair Display', serif;
-    /* font-family: 'Raleway', sans-serif; */
+    background:#1A1D20;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar-dark{
+    background: transparent!important;
+    text-align: center!important;
+    align-items: center!important;
+    justify-content: center !important;
+}
+
+.nav-text{
+    font-size: 1.4rem;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 10px;
+}
+.nav-item{
+    text-align: center!important;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    margin-right: 20px;
 }
 .top{
     padding: 1rem;
@@ -14,20 +33,13 @@ body{
     padding: 5px;
     margin: 2px;
 }
-.nav-text{
-    font-size: 1.4rem;
-    font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    padding: 1px;
-}
 .jumbotron{
-    background:#23262c!important;
+    background:#1A1D20!important;
     font-family: 'Playfair Display', serif!important;
 }
 hr{
     color: white;
-    background: rgb(163, 155, 155);
+    background: #707070;
 }
 .btn:focus{
     outline: none;
@@ -48,14 +60,15 @@ hr{
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.5s;letter-spacing: 0.5px;
-    border: 2px solid #03e9f4; outline: 0;
-    border-radius: 15px; 
-    font-family:'Playfair Display', serif!important;
+    /* border: 2px solid #03e9f4; */
+    outline: 0;
+    border-radius: 60px; 
+    font-family:'Raleway',sans-serif!important;
 }
 
 .neon-btn:hover{
     background: #03e9f4; 
-    color: #fff;
+    /* color: #fff; */
     box-shadow: 0 0 5px #03e9f4,
                 0 0 15px #03e9f4, 
                 0 0 30px #03e9f4,
@@ -63,7 +76,6 @@ hr{
 }
 .neon-btn:active{
     background: #03e9f4; 
-    color: #fff;
     box-shadow: 0 0 5px #03e9f4,
                 0 0 15px #03e9f4, 
                 0 0 30px #03e9f4,
@@ -71,7 +83,7 @@ hr{
 }
 .case{
     border-radius: 20px;
-    border: 2px solid lightslategray;    
+    /* border: 2px solid lightslategray;     */
 }
 .case:hover{
     box-shadow: 0 0 5px lightskyblue,
