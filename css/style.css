@@ -11,7 +11,7 @@ body{
 }
 
 .nav-text{
-    font-size: 1.4rem;
+    font-size: 20px;
     font-family: 'Raleway',sans-serif;
     font-weight: bold;
     letter-spacing: 0.5px;
@@ -96,4 +96,8 @@ hr{
     font-weight: 300;
     padding: 5px;
     margin: 2px;
+    background-color:#2D2E30!important  ;
+}
+.footer{
+    font-size: 12px;
 }
