@@ -3,6 +3,7 @@ body{
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
 }
+
 .navbar-dark{
     background: transparent!important;
     text-align: center!important;
@@ -13,7 +14,8 @@ body{
 .nav-text{
     font-size: 20px;
     font-family: 'Raleway',sans-serif;
-    font-weight: bold;
+    font-weight: 500;
+
     letter-spacing: 0.5px;
     padding: 10px;
 }
@@ -24,18 +26,26 @@ body{
     padding-right: 20px;
     margin-right: 20px;
 }
+
+
 .jumbotron{
     background:#1A1D20!important;
     font-family: 'Playfair Display', serif!important;
 }
+
+/* line  */
 hr{
     color: white;
     background: #707070;
 }
+
+
 .btn:focus{
     outline: none;
     border: none;
 }
+
+/* links  */
 .link{
     cursor: pointer;
     text-decoration: none;
@@ -46,47 +56,56 @@ hr{
     color: black;
 }
 
+
 .iconop{
     font-size: 2rem;
     padding: 1rem;
     color: whitesmoke;
 }
+
+/* learn more button  */
+
 .neon-btn{
     color: #03e9f4;
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.5s;letter-spacing: 0.5px;
-    /* border: 2px solid #03e9f4; */
     outline: 0;
     border-radius: 60px; 
     font-family:'Raleway',sans-serif!important;
-}
+    font-size: 18px;
 
+}
 .neon-btn:hover{
-    background: #03e9f4; 
-    /* color: #fff; */
     box-shadow: 0 0 5px #03e9f4,
-                0 0 15px #03e9f4, 
-                0 0 30px #03e9f4,
-                0 0 75px #03e9f4
+                0 0 10px #03e9f4, 
+                0 0 20px #03e9f4,
+                0 0 40px #03e9f4
 }
 .neon-btn:active{
-    background: #03e9f4; 
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 15px #03e9f4, 
-                0 0 30px #03e9f4,
-                0 0 75px #03e9f4
+    box-shadow: 0 0 1px #03e9f4,
+                0 0 5px #03e9f4, 
+                0 0 10px #03e9f4,
+                0 0 30px #03e9f4
 }
+
+/* view case study button  */
+
 .case{
     border-radius: 20px;
-    /* border: 2px solid lightslategray;     */
+    font-size: 14px;
+    font-weight: 600;
+    color:#1A1D20;
+    border: 2px solid white;
 }
+
 .case:hover{
     box-shadow: 0 0 5px lightskyblue,
-                0 0 15px lightskyblue, 
-                0 0 30px lightskyblue,
-                0 0 50px lightskyblue
+                0 0 10px lightskyblue, 
+                0 0 20px lightskyblue,
+                0 0 30px lightskyblue
 }
+
 
 .top{
     padding: 1rem;
@@ -98,6 +117,50 @@ hr{
     margin: 2px;
     background-color:#2D2E30!important  ;
 }
+
+
 .footer{
     font-size: 12px;
+}
+
+/* index page design class  */
+
+
+.head-home{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.mut{
+    font-weight: 700;
+}
+.main-head{
+    font-size: 44px;
+}
+
+/* case styles */
+.case-head{
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+
+
+}
+.case-title{
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.9px;
+}
+
+/* about styles */
+
+.abt{
+    font-weight: 600;
+}
+.resume{
+    padding: 10px;
+    margin: 10px;
+}
+.list-ul{
+    padding-left: -25px;
+    margin-left: -20px!important;
 }
