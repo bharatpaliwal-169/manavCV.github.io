@@ -136,6 +136,12 @@ hr{
 .main-head{
     font-size: 44px;
 }
+@media(max-width:768px) {
+    .main-head{
+        font-size: 34px;
+    }
+    
+}
 
 /* case styles */
 .case-head{
