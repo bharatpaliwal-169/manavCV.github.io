@@ -164,3 +164,14 @@ hr{
     padding-left: -25px;
     margin-left: -20px!important;
 }
+
+
+.lin{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.lin:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+}
