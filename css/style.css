@@ -12,9 +12,9 @@ body{
 }
 
 .nav-text{
-    font-size: 20px;
-    font-family: 'Raleway',sans-serif;
-    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
 
     letter-spacing: 0.5px;
     padding: 10px;
@@ -24,13 +24,206 @@ body{
     align-items: center;
     justify-content: center;
     padding-right: 20px;
+    padding-top: 20px;
     margin-right: 20px;
 }
 
+/*button hover*/
+
+.glow-on-hover {
+    width: 150px;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: #111111;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    
+    outline: 0;
+    font-weight: 600;
+    border-radius: 60px; 
+    font-family:'Roboto',sans-serif!important;
+    font-size: 16px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 100px;
+}
+
+.glow-on-hover:active {
+    color: #fff;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.glow-on-hover2 {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #111111;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    outline: 0;
+    font-weight: 600;
+    border-radius: 60px; 
+    font-family:'Roboto',sans-serif!important;
+    font-size: 14px;
+    
+}
+
+.glow-on-hover2:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 100px;
+}
+
+.glow-on-hover2:active {
+    color: #fff;
+}
+
+.glow-on-hover2:active:after {
+    background: transparent;
+}
+
+.glow-on-hover2:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover2:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+}
+
+.glow-on-hover3 {
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #111111;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    outline: 0;
+    font-weight: 600;
+    border-radius: 60px; 
+    font-family:'Roboto',sans-serif!important;
+    font-size: 14px;
+    
+}
+
+.glow-on-hover3:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 100px;
+}
+
+.glow-on-hover3:active {
+    color: #fff;
+}
+
+.glow-on-hover3:active:after {
+    background: transparent;
+}
+
+.glow-on-hover3:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover3:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/*button over*/ 
 
 .jumbotron{
-    background:#1A1D20!important;
-    font-family: 'Playfair Display', serif!important;
+
+    background-color: transparent;
+    font-family: 'EB Garamond', serif!important;
 }
 
 /* line  */
@@ -63,58 +256,18 @@ hr{
     color: whitesmoke;
 }
 
-/* learn more button  */
-
-.neon-btn{
-    color: #03e9f4;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.5s;letter-spacing: 0.5px;
-    outline: 0;
-    border-radius: 60px; 
-    font-family:'Raleway',sans-serif!important;
-    font-size: 18px;
-
-}
-.neon-btn:hover{
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 10px #03e9f4, 
-                0 0 20px #03e9f4,
-                0 0 40px #03e9f4
-}
-.neon-btn:active{
-    box-shadow: 0 0 1px #03e9f4,
-                0 0 5px #03e9f4, 
-                0 0 10px #03e9f4,
-                0 0 30px #03e9f4
-}
-
-/* view case study button  */
-
-.case{
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    color:#1A1D20;
-    border: 2px solid white;
-}
-
-.case:hover{
-    box-shadow: 0 0 5px lightskyblue,
-                0 0 10px lightskyblue, 
-                0 0 20px lightskyblue,
-                0 0 30px lightskyblue
-}
-
 
 .top{
     padding: 1rem;
     margin-top: 50px;   
 }
 .thin{
-    font-weight: 300;
+    font-weight: 500;
     padding: 5px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
     margin: 2px;
+    border-radius: 4px;
     background-color:#2D2E30!important  ;
 }
 
@@ -134,7 +287,13 @@ hr{
     font-weight: 700;
 }
 .main-head{
-    font-size: 44px;
+    font-size: 52px;
+}
+@media(max-width:768px) {
+    .main-head{
+        font-size: 38px;
+    }
+    
 }
 
 /* case styles */
@@ -154,7 +313,13 @@ hr{
 /* about styles */
 
 .abt{
-    font-weight: 600;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+}
+.contact {
+    color: #d8d9da;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
 }
 .resume{
     padding: 10px;
@@ -163,4 +328,164 @@ hr{
 .list-ul{
     padding-left: -25px;
     margin-left: -20px!important;
+}
+
+
+.lin{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.lin:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+}
+.lin-off{
+    color: #8D8E90;
+} 
+
+/*line with text*/
+
+.one{
+    border: none;
+    border-top: 1px  #333;
+    color: #fff;
+    overflow: visible;
+    text-align: left;
+    height: 1px;
+}
+.one:after{
+    background: #1A1D20;
+    content: '01';
+    padding: 0 8px;
+    position: relative;
+    top: -13px;
+}
+
+.two{
+    border: none;
+    border-top: 1px  #333;
+    color: #fff;
+    overflow: visible;
+    text-align: left;
+    height: 1px;
+}
+.two:after{
+    background: #1A1D20;
+    content: '02';
+    padding: 0 8px;
+    position: relative;
+    top: -13px;
+}
+
+.three{
+    border: none;
+    border-top: 1px  #333;
+    color: #fff;
+    overflow: visible;
+    text-align: left;
+    height: 1px;
+}
+.three:after{
+    background: #1A1D20;
+    content: '03';
+    padding: 0 8px;
+    position: relative;
+    top: -13px;
+}
+
+.four{
+    border: none;
+    border-top: 1px  #333;
+    color: #fff;
+    overflow: visible;
+    text-align: left;
+    height: 1px;
+}
+.four:after{
+    background: #1A1D20;
+    content: '04';
+    padding: 0 8px;
+    position: relative;
+    top: -13px;
+}
+
+.photo{
+    border: none;
+    border-top: 1px  #333;
+    color: #fff;
+    overflow: visible;
+    text-align: left;
+    height: 1px;
+}
+.photo:after{
+    background: #1A1D20;
+    content: '📸 Photography ';
+    padding: 0 8px;
+    position: relative;
+    top: -13px;
+}
+
+.overview{
+    border: none;
+    border-top: 1px  #333;
+    color: #fff;
+    overflow: visible;
+    text-align: left;
+    height: 1px;
+}
+.overview:after{
+    background: #1A1D20;
+    content: 'Overview';
+    padding: 0 8px;
+    position: relative;
+    top: -13px;
+}
+
+.Designprocess{
+    border: none;
+    border-top: 1px  #333;
+    color: #fff;
+    overflow: visible;
+    text-align: left;
+    height: 1px;
+}
+.Designprocess:after{
+    background: #1A1D20;
+    content: 'Design Process ';
+    padding: 0 8px;
+    position: relative;
+    top: -13px;
+}
+
+.finalthought{
+    border: none;
+    border-top: 1px  #333;
+    color: #fff;
+    overflow: visible;
+    text-align: left;
+    height: 1px;
+}
+.finalthought:after{
+    background: #1A1D20;
+    content: 'Final Thoughts ';
+    padding: 0 8px;
+    position: relative;
+    top: -13px;
+}
+
+.Design{
+    border: none;
+    border-top: 1px  #333;
+    color: #fff;
+    overflow: visible;
+    text-align: left;
+    height: 1px;
+}
+.Design:after{
+    background: #1A1D20;
+    content: 'Design ';
+    padding: 0 8px;
+    position: relative;
+    top: -13px;
 }
